@@ -1,0 +1,56 @@
+16:39:45 **** Incremental Build of configuration Debug for project pwm_generator ****
+make -j20 all 
+python ..\__build_tool.py pre pwm_generator
+Unable to open ../Debug/src/symbols.o
+proj: pwm_generator phase: pre
+ 
+arm-none-eabi-gcc "../src/common_drivers/maria_table.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L412xx -DBOARD_PWM_GENERATOR_1_0 -DTARGET_ARCH_ARM -DNO_MARIA_INFO -DLINK_MARIA -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I"C:/houston/src/stm32/workspace_pwm_generator/pwm_generator/src/common_drivers" -I"C:/houston/src/stm32/workspace_pwm_generator/pwm_generator/src/maria_monitor/src" -I"C:/houston/src/stm32/workspace_pwm_generator/pwm_generator/src" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/common_drivers/maria_table.d" -MT"src/common_drivers/maria_table.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "src/common_drivers/maria_table.o"
+arm-none-eabi-gcc "../src/symbols.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L412xx -DBOARD_PWM_GENERATOR_1_0 -DTARGET_ARCH_ARM -DNO_MARIA_INFO -DLINK_MARIA -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I"C:/houston/src/stm32/workspace_pwm_generator/pwm_generator/src/common_drivers" -I"C:/houston/src/stm32/workspace_pwm_generator/pwm_generator/src/maria_monitor/src" -I"C:/houston/src/stm32/workspace_pwm_generator/pwm_generator/src" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/symbols.d" -MT"src/symbols.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "src/symbols.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L412xx -DBOARD_PWM_GENERATOR_1_0 -DTARGET_ARCH_ARM -DNO_MARIA_INFO -DLINK_MARIA -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I"C:/houston/src/stm32/workspace_pwm_generator/pwm_generator/src/common_drivers" -I"C:/houston/src/stm32/workspace_pwm_generator/pwm_generator/src/maria_monitor/src" -I"C:/houston/src/stm32/workspace_pwm_generator/pwm_generator/src" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../src/common_drivers/maria_table.c: In function 'init_maria_table':
+../src/common_drivers/maria_table.c:81:10: warning: unused variable 'i' [-Wunused-variable]
+   81 |      int i=0;
+      |          ^
+In file included from C:/houston/src/stm32/workspace_pwm_generator/pwm_generator/src/maria_monitor/src/maria.h:11,
+                 from ../src/brd_pwm_generator.h:11,
+                 from ../src/symbols.c:5:
+../src/symbols.c: In function 'showStat':
+C:/houston/src/stm32/workspace_pwm_generator/pwm_generator/src/maria_monitor/src/maria_parser.h:17:23: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+   17 | #define ARD_sprintf   sprintf
+      |                       ^~~~~~~
+../src/symbols.c:75:9: note: in expansion of macro 'ARD_sprintf'
+   75 |         ARD_sprintf(p1, "%s     ", p0);
+      |         ^~~~~~~~~~~
+../src/symbols.c:6:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+    5 | #include "brd_pwm_generator.h"
+  +++ |+#include <stdio.h>
+    6 | 
+C:/houston/src/stm32/workspace_pwm_generator/pwm_generator/src/maria_monitor/src/maria_parser.h:17:23: warning: incompatible implicit declaration of built-in function 'sprintf' [-Wbuiltin-declaration-mismatch]
+   17 | #define ARD_sprintf   sprintf
+      |                       ^~~~~~~
+../src/symbols.c:75:9: note: in expansion of macro 'ARD_sprintf'
+   75 |         ARD_sprintf(p1, "%s     ", p0);
+      |         ^~~~~~~~~~~
+C:/houston/src/stm32/workspace_pwm_generator/pwm_generator/src/maria_monitor/src/maria_parser.h:17:23: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   17 | #define ARD_sprintf   sprintf
+      |                       ^~~~~~~
+../src/symbols.c:75:9: note: in expansion of macro 'ARD_sprintf'
+   75 |         ARD_sprintf(p1, "%s     ", p0);
+      |         ^~~~~~~~~~~
+arm-none-eabi-gcc -o "pwm_generator.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\houston\src\stm32\workspace_pwm_generator\pwm_generator\STM32L412KBUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="pwm_generator.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: pwm_generator.elf
+ 
+arm-none-eabi-size  pwm_generator.elf 
+arm-none-eabi-objdump -h -S pwm_generator.elf  > "pwm_generator.list"
+   text	   data	    bss	    dec	    hex	filename
+  30956	   1488	   3416	  35860	   8c14	pwm_generator.elf
+Finished building: default.size.stdout
+ 
+Finished building: pwm_generator.list
+ 
+python ..\__build_tool.py post pwm_generator
+proj: pwm_generator phase: post
+ 
+
+16:39:49 Build Finished. 0 errors, 3 warnings. (took 3s.990ms)
+

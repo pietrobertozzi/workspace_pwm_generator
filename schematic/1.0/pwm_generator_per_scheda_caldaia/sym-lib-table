@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "NUCLEO-L432KC")(type "Legacy")(uri "${KIPRJMOD}/NUCLEO-L432KC/NUCLEO-L432KC.lib")(options "")(descr ""))
+)

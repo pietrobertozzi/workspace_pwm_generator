@@ -1,0 +1,38 @@
+{
+	"folders": [
+		{
+			"path": "pwm_generator/"
+		}
+	],
+	"settings": {
+		"search.exclude": {
+			"**/built": true,
+			"**/obj": true,
+		},
+		"includePath": [
+                "${workspaceFolder}/**",
+        ],
+		"C_Cpp.default.defines": [
+                "DEBUG",
+                "UNICODE",
+				"int16_t=short",
+				"int32_t=int",
+				"int8_t=char",
+				"uint16_t=unsigned short",
+				"uint32_t=unsigned int",
+				"uint8_t=unsigned char",
+				"uint64_t=unsigned long long",
+				"USE_HAL_DRIVER",
+				"STM32L412xx",
+				"BOARD_PWM_GENERATOR_1_0",
+				"LINK_MARIA",
+				"TARGET_ARCH_ARM",
+				"NO_MARIA_INFO",
+		],
+		"C_Cpp.vcFormat.indent.gotoLabels": "leftmostColumn",
+		"workbench.tree.indent": 35,
+		"files.associations": {
+			"brd_eepromprg.h": "c"
+		},
+	}
+}

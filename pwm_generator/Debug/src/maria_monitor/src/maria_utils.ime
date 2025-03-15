@@ -1,0 +1,17 @@
+extern int GPM;
+extern int MARIA_ADD_CR;
+extern int srecStore(void);
+extern int dump(void);
+extern int dumpulong(void);
+extern int dumplong(void);
+extern int memfillbyte(void);
+extern int memfillshort(void);
+extern int memfilllong(void);
+extern int rem(void);
+extern int retval(void);
+extern int Unknown_symbol(void);
+extern int showSym(void);
+extern int fillMemory(void);
+extern int showMaria(void);
+extern int dumppkt(void);
+extern int printArgs(void);

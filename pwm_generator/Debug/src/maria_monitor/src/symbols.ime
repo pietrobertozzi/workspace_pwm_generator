@@ -1,0 +1,2 @@
+extern int setPwm(void);
+extern int showStat(void);

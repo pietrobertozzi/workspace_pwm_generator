@@ -1,0 +1,6 @@
+../src/brd_pwm_generator.c:29:6:HAL_UART_RxCpltCallback	4
+../src/brd_pwm_generator.c:65:5:mainTaskInit	3
+../src/brd_pwm_generator.c:113:6:mainTaskLoopIteration	4
+../src/brd_pwm_generator.c:153:5:mainTaskEnd	1
+../src/brd_pwm_generator.c:174:6:initBoardStat	1
+../src/brd_pwm_generator.c:193:20:mainTaskIdle	3
