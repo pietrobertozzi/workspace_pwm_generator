@@ -1,4 +1,0 @@
-../src/common_drivers/drv_maria.c:22:5:maria_read	2
-../src/common_drivers/drv_maria.c:40:5:maria_write	2
-../src/common_drivers/drv_maria.c:53:6:maria_open	2
-../src/common_drivers/drv_maria.c:70:6:maria_close	2
